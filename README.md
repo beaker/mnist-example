@@ -2,6 +2,8 @@
 
 This is an example of how to train a Pytorch MNIST model in Beaker.
 
+The mnist data is current already available on Beaker under `marc/mnist`.
+
 ## Vanilla usage:
 
 1. install pytorch and torchvision
