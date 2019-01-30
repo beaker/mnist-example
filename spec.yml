@@ -1,0 +1,21 @@
+description: A beaker example using MNIST for UW
+tasks:
+  - name: testing_training 
+    spec:
+      blueprint: marc/mnist
+      resultPath: /output
+      requirements:
+        gpuCount: 1
+      datasetMounts:
+        - datasetId: marc/mnist 
+          containerPath: /data
+      env:
+        EPOCH: 50
+      args:
+        - python
+        - -u 
+        - beaker_pytorch/main.py
+        - --data-dir
+        - /data
+        - --output-dir
+        - /output

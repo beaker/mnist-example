@@ -1,0 +1,22 @@
+description: A beaker example using MNIST
+tasks:
+  - name: beaker_pytorch
+    spec:
+      blueprint: bp_mu55sxxozvle
+      resultPath: /output
+      args:
+        - python
+        - '-u'
+        - beaker_pytorch/main.py
+        - '--data-dir'
+        - /data
+        - '--output-dir'
+        - /output
+      env:
+        EPOCH: '50'
+      datasetMounts:
+        - datasetId: ds_dcgow2v8gy78
+          containerPath: /data
+      requirements:
+        gpuCount: 1
+
