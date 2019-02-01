@@ -27,23 +27,10 @@ EPOCH=10; python beaker_pytorch/main.py \
 1. build the docker image
 
 ```bash
-docker build -t beaker_pytorch .
+docker build -t mnist .
 ```
 
-2. Download the MNIST data, as above
-3. run the docker image mounting the data and output directories
 
-```bash
-docker run -t \
-    -v /local/path/to/data:/data:ro \
-    -v /local/path/to/output:/output:rw \
-    --env EPOCH=10 \
-    beaker_pytorch \
-    python beaker_pytorch/main.py \
-        --data-dir /data \
-        --output-dir /output \
-    
-```
 
 ## Beaker usage
 
@@ -54,9 +41,9 @@ docker run -t \
 
 If you chose to rebuild use
 ```bash
-beaker blueprint create -n "beaker_pytorch" beaker_pytorch
+beaker blueprint create -n mnist mnist
 ```
-to create a blueprint.
+to create a blueprint. Please note that you may only have one Blueprint called `mnist` so may have to change this name.
 
 4. Run the experiment:
 
