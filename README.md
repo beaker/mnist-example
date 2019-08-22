@@ -37,13 +37,13 @@ docker build -t mnist .
 1. [Install Beaker](https://github.com/allenai/beaker/wiki/Getting-Started)
 2. You can choose to download the MNIST data above and create a new dataset or use the existing MNIST dataset named
 `marc/mnist` located [here](https://beaker.org/ds/ds_kf6v919aq7hk/details)
-3. You can either rebuild and push the docker image above or use the existing Blueprint named [`marc/mnist`](https://beaker.org/bp/bp_wsmthunsqok3/details)
+3. You can either rebuild and push the docker image above or use the existing Image named [`marc/mnist`](https://beaker.org/bp/bp_wsmthunsqok3/details)
 
 If you chose to rebuild use
 ```bash
-beaker blueprint create -n mnist mnist
+beaker image create -n mnist mnist
 ```
-to create a blueprint. Please note that you may only have one Blueprint called `mnist` so may have to change this name.
+to create an image. Please note that you may only have one Image called `mnist`, so you may have to change this name.
 
 4. Run the experiment:
 
