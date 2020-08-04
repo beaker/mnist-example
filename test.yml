@@ -2,7 +2,7 @@ description: A beaker example using MNIST
 tasks:
   - name: beaker_pytorch
     spec:
-      image: im_wsmthunsqok3
+      image: marc/mnist
       resultPath: /output
       args:
         - python
