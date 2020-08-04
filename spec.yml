@@ -2,7 +2,7 @@ description: A beaker example using MNIST for UW
 tasks:
   - name: testing_training 
     spec:
-      blueprint: marc/mnist
+      image: marc/mnist
       resultPath: /output
       requirements:
         gpuCount: 1

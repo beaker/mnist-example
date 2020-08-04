@@ -2,7 +2,7 @@
 
 This is an example of how to train a Pytorch MNIST model in Beaker.
 
-The mnist data is current already available on Beaker under `marc/mnist`.
+The mnist data is current already available on Beaker under [`marc/mnist`](https://beaker.org/ds/ds_kf6v919aq7hk/details).
 
 ## Vanilla usage:
 
@@ -34,10 +34,10 @@ docker build -t mnist .
 
 ## Beaker usage
 
-1. [Install Beaker](https://github.com/allenai/beaker/wiki/Getting-Started)
+1. [Install Beaker](https://github.com/allenai/beaker)
 2. You can choose to download the MNIST data above and create a new dataset or use the existing MNIST dataset named
 `marc/mnist` located [here](https://beaker.org/ds/ds_kf6v919aq7hk/details)
-3. You can either rebuild and push the docker image above or use the existing Image named [`marc/mnist`](https://beaker.org/bp/bp_wsmthunsqok3/details)
+3. You can either rebuild and push the docker image above or use the existing Image named [`marc/mnist`](https://beaker.org/im/im_wsmthunsqok3/details)
 
 If you chose to rebuild use
 ```bash
