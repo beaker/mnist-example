@@ -2,7 +2,7 @@ description: A beaker example using MNIST
 tasks:
   - name: beaker_pytorch
     spec:
-      blueprint: bp_mu55sxxozvle
+      image: marc/mnist
       resultPath: /output
       args:
         - python
@@ -19,4 +19,3 @@ tasks:
           containerPath: /data
       requirements:
         gpuCount: 1
-
